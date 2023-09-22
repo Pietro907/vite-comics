@@ -2,7 +2,7 @@
 
 export default {
   // questo é il vs options object
-  name: 'AppMain',
+  name: 'AppFooter1',
   data(){
     return{
     
@@ -17,7 +17,7 @@ export default {
 
 <template>
 
-    
+
     
 </template>
 

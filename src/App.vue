@@ -3,14 +3,15 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppJumbotron from './components/AppJumbotron.vue'
-import AppFooter1 from './components/AppFooter1.vue'
-import AppFooter2 from './components/AppFooter2.vue'
+import AppFooterp from './components/AppFooterp.vue'
+import AppFooterparte from './components/AppFooterparte.vue'
 
 
 
 
 export default {
   // questo é il vs options object
+    name: 'App',
   data(){
     return{
       
@@ -23,8 +24,8 @@ export default {
     AppHeader,
     AppMain,
     AppJumbotron,
-    AppFooter1,
-    AppFooter2,
+    AppFooterp,
+    AppFooterparte,
   }
 }
 
@@ -35,8 +36,8 @@ export default {
   <AppHeader></AppHeader>
   <AppMain></AppMain>
   <AppJumbotron></AppJumbotron>
-  <AppFooter1></AppFooter1>
-  <AppFooter2></AppFooter2>
+  <AppFooterp></AppFooterp>
+  <AppFooterparte></AppFooterparte>
 
 
 

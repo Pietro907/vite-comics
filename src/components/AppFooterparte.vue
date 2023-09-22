@@ -2,7 +2,7 @@
 
 export default {
   // questo é il vs options object
-  name: 'AppMain',
+  name: 'AppFooter2',
   data(){
     return{
     
