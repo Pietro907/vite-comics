@@ -1,17 +1,17 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
 import AppJumbotron from './components/AppJumbotron.vue'
-import AppFooterp from './components/AppFooterp.vue'
-import AppFooterparte from './components/AppFooterparte.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
+
 
 
 
 
 export default {
   // questo é il vs options object
-    name: 'App',
+    
   data(){
     return{
       
@@ -22,10 +22,10 @@ export default {
   },
   components: {
     AppHeader,
-    AppMain,
     AppJumbotron,
-    AppFooterp,
-    AppFooterparte,
+    AppMain,
+    AppFooter,
+    
   }
 }
 
@@ -34,18 +34,20 @@ export default {
 <template>
 
   <AppHeader></AppHeader>
-  <AppMain></AppMain>
+
   <AppJumbotron></AppJumbotron>
-  <AppFooterp></AppFooterp>
-  <AppFooterparte></AppFooterparte>
+
+  <AppMain></AppMain>
+
+  <AppFooter></AppFooter>
 
 
 
 </template>
 
-<style>
+<style lang="scss" scope>
 
-
-
+  //@use './assets/scss/particials/variables.scss' as *
+ 
 
 </style>

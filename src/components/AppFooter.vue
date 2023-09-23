@@ -2,7 +2,7 @@
 
 export default {
   // questo é il vs options object
-  name: 'AppFooter1',
+  name: 'AppFooter',
   data(){
     return{
     
@@ -23,6 +23,8 @@ export default {
 
 
 <style lang="scss">
+
+
 
 </style>
 

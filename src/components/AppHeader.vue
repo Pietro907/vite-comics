@@ -7,7 +7,7 @@ export default {
 
   data(){
     return{
-        
+      navHeader: ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop']
     
     }
 
@@ -21,7 +21,7 @@ export default {
 <template>
 
   <header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-3">
 
@@ -30,22 +30,14 @@ export default {
 
         </div>
 
-        <div class="col-9 d-flex">
-          <!-- Navbar header -->
-          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid menu_nav">
+        <div class="col-9 jst_ctr">
+
+          <!-- Navbar header loop per 10 -->
+          <nav class="navbar navbar-expand-sm">
+            <div v-for="linkHeader in navHeader" class="container">
       
-              <a class="navbar-brand" href="#">CHARACTERS</a>
-              <a class="navbar-brand" href="#">COMIC</a>
-              <a class="navbar-brand" href="#">MOVIES</a>
-              <a class="navbar-brand" href="#">TV</a>
-              <a class="navbar-brand" href="#">GAMES</a>
-              <a class="navbar-brand" href="#">COLLECTIBLES</a>
-              <a class="navbar-brand" href="#">VIDEOS</a>
-              <a class="navbar-brand" href="#">FANS</a>
-              <a class="navbar-brand" href="#">NEWS</a>
-              <a class="navbar-brand" href="#">SHOP</a>
-      
+              <a class="navbar-brand text-red text-uppercase" href="#">{{ linkHeader }}</a>
+              
             </div>
           </nav>
 
@@ -68,23 +60,18 @@ export default {
 
 <style lang="scss" scoped>
 
-
-.row {
+.jst_ctr {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
-.menu_nav {
-  background-color: #ffffff;
-}
-.menu_nav > a {
-  padding: 0 0.5rem;
-  color: #1c1c1c;
-}
 
+
+/* 
 .active {
   background-color: #0282f9;
-}
+} */
 
 </style>
 
