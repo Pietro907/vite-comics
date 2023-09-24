@@ -48,6 +48,6 @@ export default {
 <style lang="scss" scope>
 
   //@use './assets/scss/particials/variables.scss' as *
- 
+
 
 </style>

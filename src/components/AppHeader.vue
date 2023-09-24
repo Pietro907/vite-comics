@@ -34,7 +34,7 @@ export default {
 
           <!-- Navbar header loop per 10 -->
           <nav class="navbar navbar-expand-sm jst_btwn">
-            <div v-for="linkHeader in navHeader" class="container pad_x">
+            <div v-for="linkHeader in navHeader" class="container_a pad_x">
       
               <a class="navbar-brand text-red text-uppercase" href="#">{{ linkHeader }}</a>
               
@@ -60,13 +60,25 @@ export default {
 
 <style lang="scss" scoped>
 
+header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_header {
+  max-width: 1920px;
+}
+
 
 .container_header > .row {
   width: 70%;
   margin: 0 auto;
+
 }
 
-
+.container_a > a {
+  text-decoration: none;
+  color: black;
+}
 
 .jst_ctr {
   display: flex;

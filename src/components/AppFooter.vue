@@ -24,6 +24,9 @@ export default {
 
 <style lang="scss">
 
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 </style>

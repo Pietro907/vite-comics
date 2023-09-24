@@ -73,8 +73,12 @@ export default {
 
 <style lang="scss">
 
+
+
 .container_main {
   background-color: black;
+  max-width: 1920px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container_content, .jumbotron > .row {
   width: 70%;

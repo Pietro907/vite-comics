@@ -97,12 +97,20 @@ export default {
 
 
 <style lang="scss">
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
 .container_img {
   background-image: url(.././src/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
+  max-width: 1920px;
+
 }
 .container_img > .row {
   width: 70%;
@@ -139,6 +147,7 @@ ul > li > a {
 }
 .sing_up{
   background-color: #000000;
+  margin: 0 auto;
 }
 </style>
 
