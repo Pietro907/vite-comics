@@ -21,8 +21,8 @@ export default {
 <template>
 
   <header>
-    <div class="container">
-      <div class="row">
+    <div class="container_header">
+      <div class="row jst_btwn">
         <div class="col-3">
 
           <!-- Logo immagine -->
@@ -30,11 +30,11 @@ export default {
 
         </div>
 
-        <div class="col-9 jst_ctr">
+        <div class="col-9 ">
 
           <!-- Navbar header loop per 10 -->
-          <nav class="navbar navbar-expand-sm">
-            <div v-for="linkHeader in navHeader" class="container">
+          <nav class="navbar navbar-expand-sm jst_btwn">
+            <div v-for="linkHeader in navHeader" class="container pad_x">
       
               <a class="navbar-brand text-red text-uppercase" href="#">{{ linkHeader }}</a>
               
@@ -60,11 +60,33 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.container_header > .row {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+
 .jst_ctr {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.jst_btwn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* space */
+
+.pad_x {
+  padding: 0 0.5rem;
 }
 
 

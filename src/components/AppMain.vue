@@ -104,6 +104,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.container_img > .row {
+  width: 70%;
+  margin: 0 auto;
+}
 
 .row {
   display: flex;

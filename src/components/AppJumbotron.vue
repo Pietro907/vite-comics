@@ -53,12 +53,12 @@ export default {
     <div class="jumbotron">
       <div class="row">
   
-        <div v-for="link in navJumbo" class="col-5 mx-2 d-flex justify-content-center">
+        <div v-for="link in navJumbo" class="col-3 mx-2 d-flex justify-content-center">
           
           <img :src="link.image" class="image" alt="">
           
           <div class="card">
-            {{ link.text }}
+            <h4>{{ link.text }}</h4>
           </div>
           
         </div>
@@ -76,7 +76,7 @@ export default {
 .container_main {
   background-color: black;
 }
-.container_content {
+.container_content, .jumbotron > .row {
   width: 70%;
   margin: 0 auto;
 }
@@ -92,23 +92,26 @@ export default {
 }
 .jumbotron {
   background-color: #0282f9;
+  
 }
-.r_jumbo {
+
+/* .r_jumbo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-}
-.col-5 {
-  height: 200px;
+} */
+.col-3 {
+  
   display: flex;
   align-items: center;
-  padding:2rem 1rem;
+  padding:3rem 1rem;
 }
 .image {
   width: 60px;
-  height: 70px;
+  height: 60px;
   aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 /* space */
@@ -116,7 +119,10 @@ export default {
 .ms {
   margin-left: 1rem;
 }
-
+.card {
+  
+  width: 135px;
+}
 
 /* color */
 
