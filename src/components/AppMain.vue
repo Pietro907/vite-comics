@@ -5,7 +5,25 @@ export default {
   name: 'AppMain',
   data() {
     return {
-
+      navMain: [
+        {
+          title: 'digital comics',
+          list:  ['characters','comic','movies','tv','games','videos','news'], 
+        },
+        {
+          title: 'shop',
+          list:  ['shop dc','shop dc collectibles'], 
+        },
+        {
+          title: 'dc',
+          list:  ['terms of use','privacy','policity (new)','ad choices','adversting','jobs','subscriction','talent','workshops','cpsc','certificates','ratings', 'shop help','contact us'], 
+        },
+        {
+          title: 'sites',
+          list:  ['mad','magazine','dc kids','dc univers','dc power visa'], 
+        },
+        
+      ]
     }
 
   },
@@ -23,14 +41,9 @@ export default {
 
         <div class="col-2">
           <ul class="list_unstyle">
-            <li class="title">DC COMICS</li>
-            <li><a class="tile" href="#">CHARACTERS</a></li>
-            <li><a href="#">COMIC</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">NEWS</a></li>
+            <li class="title">site</li>
+            <li><a href="#">CHARACTERS</a></li>
+            
           </ul>
 
           <ul class="list_unstyle">

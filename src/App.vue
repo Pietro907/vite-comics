@@ -11,7 +11,7 @@ import AppFooter from './components/AppFooter.vue'
 
 export default {
   // questo é il vs options object
-    
+    name: 'App',
   data(){
     return{
       
