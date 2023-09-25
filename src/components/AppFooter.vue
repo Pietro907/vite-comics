@@ -56,7 +56,13 @@ export default {
         },
         {
           title: 'shop',
-          list: [{ name: 'shop dc' }, { name: 'shop dc collectibles' }],
+          list: [
+          {
+            name: 'shop dc',
+          }
+          , 
+          { 
+            name: 'shop dc collectibles' ,          }],
         },
         {
           title: 'dc',
@@ -107,7 +113,22 @@ export default {
         },
         {
           title: 'sites',
-          list: ['mad', 'magazine', 'dc kids', 'dc univers', 'dc power visa'],
+          list: [{
+            name: 'mad',
+          }, 
+          {
+            name: 'magazine',
+          }, 
+          {
+            name: 'dc kids'
+          }, 
+          {
+            name: 'dc univers',
+          }, 
+          {
+            name: 'dc power visa',
+          }
+        ],
         },
 
       ]
@@ -138,44 +159,7 @@ export default {
 
 
         </div>
-        <!-- <div  class="col-2">
 
-          <ul  class="list_unstyle">
-
-            <li class="title">DC </li>
-            <li><a href="#">Terms Of Use</a></li>
-            <li><a href="#">Privacy Policity (New)</a></li>
-            <li><a href="#">Ad Choices</a></li>
-            <li><a href="#">Adversting</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Subscriction</a></li>
-            <li><a href="#">Talent Workshops</a></li>
-            <li><a href="#">CPSC Certificates</a></li>
-            <li><a href="#">Ratings</a></li>
-            <li><a href="#">Shop Help</a></li>
-            <li><a href="#">Contact Us</a></li>
-
-          </ul>
-
-        </div>
-
-        <div class="col-2">
-
-          <ul class="list_unstyle">
-
-            <li class="title">SITES</li>
-            <li><a href="#">MAD Magazine</a></li>
-            <li><a href="#">DC Kids</a></li>
-            <li><a href="#">DC Univers</a></li>
-            <li><a href="#">DC Power Visa</a></li>
-
-          </ul>
-
-        </div>
-
-        <div class="col-6">
-
-        </div> -->
 
       </div>
 
