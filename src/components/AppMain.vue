@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       cardsArray,
-      
+
     }
   },
 }
@@ -41,30 +41,32 @@ export default {
 
       <div class="row">
 
-        <AppMainContent :image="card.thumb" :title="card.series" :cardsArray="cardsArray" :cards="cardsArray.cards" v-for="(card, i) in cardsArray.cards"> </AppMainContent>
-        
-        
+        <AppMainContent :image="card.thumb" :title="card.series" :cardsArray="cardsArray" :cards="cardsArray.cards"
+          v-for="(card, i) in cardsArray.cards">
+        </AppMainContent>
 
-        
+
+
+
       </div>
 
     </div>
 
     <div class="container_foot">
-  
+
       <div class="row jst_btwn">
-  
+
         <!-- Button load more -->
         <div class="col none_bg_img jst_ctr">
-  
+
           <div class="sing_up">
-  
+
             <button class="color" type="button"><b>LOAD MORE</b></button>
-  
+
           </div>
-  
+
         </div>
-  
+
       </div>
     </div>
   </div>
@@ -80,10 +82,12 @@ export default {
   top: 390px;
   left: 180px;
 }
-.container_foot{
+
+.container_foot {
   display: flex;
   justify-content: center;
 }
+
 .color {
   background-color: #0282f9;
   color: #ffffff;
@@ -91,6 +95,7 @@ export default {
   margin: -1.5rem 0 1.5rem;
   border: none;
 }
+
 main {
   font-family: Arial, Helvetica, sans-serif;
 
