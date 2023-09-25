@@ -1,11 +1,14 @@
 <script>
 
+import cards from '../card.js'
+
 export default {
   // questo é il vs options object
   name: 'AppMain',
+  
   data() {
     return {
-
+      cards,
     }
 
   },
@@ -21,9 +24,13 @@ export default {
     <!-- Content goes here -->
     <div class="container_content">
 
-      <div class="row r_container">
-        <div class="col-12">
-          <h2 class=""> Content goes here </h2>
+      <div class="row">
+
+        <div v-for="item in cards" class="col-6">
+          <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          <h2>{{item.price}}</h2>
+          <h2>series</h2>
+          <h2>type</h2>
         </div>
       </div>
 
@@ -38,6 +45,7 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
 .container_main {
   background-color: black;
   max-width: 1920px;
@@ -49,14 +57,15 @@ main {
   margin: 0 auto;
 }
 
-.col-12 {
-  height: 100px;
+.col-6 {
+  color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0.5rem 0;
 }
 
-.col-12 > h2 {
+.col-12>h2 {
   color: #ffffff;
 }
 </style>

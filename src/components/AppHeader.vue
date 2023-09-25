@@ -36,7 +36,7 @@ export default {
           <nav class="navbar navbar-expand-sm jst_btwn">
             <div v-for="linkHeader in navHeader" class="container_a pad_x">
       
-              <a class="navbar-brand text-red text-uppercase"  href="#">{{ linkHeader }}</a>
+              <a class="active navbar-brand text-red text-uppercase"  href="#">{{ linkHeader }}</a>
               
             </div>
           </nav>
@@ -99,8 +99,9 @@ header {
   align-items: center;
 }
 
-a:hover {
-  padding-bottom: 0.5rem;
+a.active:hover {
+  color: #0282f9;
+  padding-bottom: 1rem;
   border-bottom: 5px solid #0282f9;
 }
 
