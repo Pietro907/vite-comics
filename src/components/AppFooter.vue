@@ -24,7 +24,7 @@ export default {
 
       <div class="row">
 
-        <div v-for="menu in brands.navMenu" class="col-2">
+        <div v-for="(menu, i) in brands.navMenu" class="col-2">
 
           <ul class="list_unstyle">
 
@@ -72,9 +72,9 @@ export default {
 
             <a href="#"><b>FOLLOW US</b></a>
 
-            <div v-for="brand in brands" class="logo">
+            <div v-for="(logo, i) in list" class="logo">
 
-              <img :src="brand.logo" :alt="brand.name">
+              <img :src="logo.logo" :alt="brand.name">
 
             </div>
 
@@ -163,6 +163,10 @@ ul>li>a {
   padding: 2rem;
   margin-top: -1rem;
 
+}
+.container_foot > .row {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .jst_ctr {
