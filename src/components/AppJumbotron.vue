@@ -51,7 +51,7 @@ export default {
   
     <!-- jumbotron -->
     <div class="jumbotron">
-      <div class="row">
+      <div class="row jst_ctr w_jumbo">
   
         <div v-for="link in navJumbo" class="col-3 mx-2 d-flex justify-content-center">
           
@@ -81,8 +81,10 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
 }
 .container_content, .jumbotron > .row {
-  width: 70%;
   margin: 0 auto;
+}
+.container_content {
+  width: 70%;
 }
 
 .col-12 {
@@ -99,17 +101,14 @@ export default {
   
 }
 
-/* .r_jumbo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-} */
+.w_jumbo {
+  width: 70%;
+}
 .col-3 {
   
   display: flex;
   align-items: center;
-  padding:3rem 1rem;
+  padding:2rem 1rem;
 }
 .image {
   width: 60px;
