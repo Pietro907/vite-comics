@@ -22,13 +22,14 @@ export default {
 
 
 <template>
+  <div class="current_series"><b>CURRENT SERIES</b></div>
   <section>
 
     <div class="content img_jumbo">
 
 
 
-      
+
 
 
     </div>
@@ -54,18 +55,56 @@ export default {
 
     </div>
 
+    <div class="container_foot">
+  
+      <div class="row jst_btwn">
+  
+        <!-- Button load more -->
+        <div class="col none_bg_img jst_ctr">
+  
+          <div class="sing_up">
+  
+            <button class="color" type="button"><b>LOAD MORE</b></button>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
   </div>
 </template>
 
 
 <style lang="scss" scoped>
+.current_series {
+  background-color: #0282f9;
+  padding: 0.5rem;
+  color: #ffffff;
+  position: absolute;
+  top: 390px;
+  left: 180px;
+}
+.container_foot{
+  display: flex;
+  justify-content: center;
+}
+.color {
+  background-color: #0282f9;
+  color: #ffffff;
+  padding: 0.5rem 3rem;
+  margin: -1.5rem 0 1.5rem;
+  border: none;
+}
 main {
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
 .content {
   margin-bottom: -1rem;
 }
+
 .img_jumbo {
   background-image: url('../assets/img/jumbotron.jpg');
   background-size: cover;
@@ -98,7 +137,7 @@ main {
   margin: 0 2px;
 }
 
-.card > .img_book {
+.card>.img_book {
   width: 150px;
   aspect-ratio: 1 / 1;
 }
@@ -109,5 +148,6 @@ main {
 
 .col-12>h2 {
   color: #ffffff;
-}</style>
+}
+</style>
 

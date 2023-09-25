@@ -19,7 +19,7 @@ export default {
 
 <template>
   
-
+ 
   
   
     <!-- jumbotron -->
@@ -60,6 +60,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .col-3 {
   width: calc(100% / 12 * 3);
