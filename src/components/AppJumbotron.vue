@@ -1,35 +1,15 @@
 <script>
 
+import jumbo from '../jumbo.js'
+
 export default {
   // questo é il vs options object
   name: 'AppJumbotron',
 
   data() {
     return {
-      navJumbo: [
-        {
-          text: 'digital comics',
-          image:  'src/assets/img/buy-comics-digital-comics.png', 
-        },
-        {
-          text: 'dc merchandise',
-          image:  'src/assets/img/buy-comics-merchandise.png', 
-        },
-        {
-          text: 'subscription',
-          image:  'src/assets/img/buy-comics-shop-locator.png', 
-        },
-        {
-          text: 'comic shop locator',
-          image:  'src/assets/img/buy-comics-subscriptions.png', 
-        },
-        {
-          text: 'dc power visa',
-          image:  'src/assets/img/buy-dc-power-visa.svg', 
-        },        
-      ]
+      jumbo,
     }
-
   },
 
 }
@@ -46,12 +26,12 @@ export default {
     <div class="jumbotron">
       <div class="row jst_ctr w_jumbo">
   
-        <div v-for="link in navJumbo" class="col-3">
+        <div v-for="(link , i) in jumbo.navJumbo" class="col-3">
           
           <img :src="link.image" class="image" alt="">
           
           <div class="card">
-            <h4 class=" ms">{{ link.text }}</h4>
+            <h4 class="ms">{{ link.text }}</h4>
           </div>
           
         </div>
@@ -103,7 +83,7 @@ export default {
 }
 .card {
   
-  width: 150px;
+  width: 100%;
 }
 
 /* color */

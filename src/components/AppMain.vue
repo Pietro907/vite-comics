@@ -68,14 +68,14 @@ main {
 .col-2 {
   color: #ffffff;
   padding: 0.5rem 0.5rem;
-  margin: 0 5px;
+  margin: 0 2px;
 }
-.card> img {
-  width: 110px;
+.card > img {
+  width: 150px;
   aspect-ratio: 1 / 1;
 }
 .card {
-  width: 100px;
+  width: 150px;
 }
 .col-12>h2 {
   color: #ffffff;
