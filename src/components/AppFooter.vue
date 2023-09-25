@@ -72,9 +72,9 @@ export default {
 
             <a href="#"><b>FOLLOW US</b></a>
 
-            <div v-for="(logo, i) in list" class="logo">
+            <div v-for="pic in brands.brands" class="logo">
 
-              <img :src="logo.logo" :alt="brand.name">
+              <img :src="pic.logo" :alt="pic.name">
 
             </div>
 
@@ -160,7 +160,7 @@ ul>li>a {
 
 .container_foot {
   background-color: #303030;
-  padding: 2rem;
+  padding: 2rem 0;
   margin-top: -1rem;
 
 }
@@ -183,7 +183,9 @@ ul>li>a {
   align-items: center;
 }
 
-
+.features {
+  margin-left: 3rem;
+}
 
 .features>a {
   text-decoration: none;
@@ -196,8 +198,6 @@ ul>li>a {
   width: 25px;
   padding-right: 0.5rem;
 }
-
-
 
 .color {
   background-color: #303030;
