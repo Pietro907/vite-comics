@@ -221,15 +221,16 @@ export default {
 
 }
 
-.container_img>.row {
+.container_img > .row {
   width: 70%;
+  height: 260px;
   margin: 0 auto;
-}
-
-.row {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: start;
 }
+
 
 .title {
   color: white;
@@ -286,7 +287,7 @@ footer {
 
 
 
-.features>a {
+.features > a {
   text-decoration: none;
   color: #0282f9;
   font-size: small;

@@ -88,7 +88,7 @@ export default {
 }
 
 .col-12 {
-  height: 200px;
+  height: 100px;
   display: flex;
   align-items: center;
 }

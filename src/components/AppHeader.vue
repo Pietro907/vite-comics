@@ -26,7 +26,7 @@ export default {
         <div class="col-3">
 
           <!-- Logo immagine -->
-          <img src="../assets/img/dc-logo.png" alt="logo DC Univers">
+          <img class="logo" src="../assets/img/dc-logo.png" alt="logo DC Univers">
 
         </div>
 
@@ -62,6 +62,10 @@ export default {
 
 header {
   font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+  width:60px;
+  height:60px;
 }
 
 .container_header {
