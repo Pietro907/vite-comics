@@ -10,12 +10,13 @@ export default {
   data() {
     return {
       cards,
-      /* name: 'cards',
-      props: ['thumb','price','series','type'] */
+      props: {
+        img: String,
+        big: String,
+        small: String,
+      }
     }
-
   },
-
 }
 
 </script>
@@ -45,7 +46,7 @@ export default {
         <div v-for="(card, i) in cards.cards" class="col-2">
           <!-- <h2>{{card.price}}</h2> -->
           <div class="card">
-            <img class="img_book" :src="card.thumb" alt="">
+            <img class="img_book" :src="img" :alt="small">
 
             <h6>{{ card.series }}</h6>
           </div>
