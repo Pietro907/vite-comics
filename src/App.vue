@@ -34,10 +34,10 @@ export default {
 <template>
 
   <AppHeader></AppHeader>
-
+  
+  <AppMain></AppMain>
   <AppJumbotron></AppJumbotron>
 
-  <AppMain></AppMain>
 
   <AppFooter></AppFooter>
 

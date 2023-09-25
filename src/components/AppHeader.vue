@@ -36,7 +36,7 @@ export default {
           <nav class="navbar navbar-expand-sm jst_btwn">
             <div v-for="linkHeader in navHeader" class="container_a pad_x">
       
-              <a class="navbar-brand text-red text-uppercase" href="#">{{ linkHeader }}</a>
+              <a class="navbar-brand text-red text-uppercase"  href="#">{{ linkHeader }}</a>
               
             </div>
           </nav>
@@ -82,6 +82,7 @@ header {
 .container_a > a {
   text-decoration: none;
   color: black;
+  
 }
 
 .jst_ctr {
@@ -98,6 +99,11 @@ header {
   align-items: center;
 }
 
+a:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid #0282f9;
+}
+
 
 /* space */
 
@@ -106,9 +112,9 @@ header {
 }
 
 
-/* 
-.active {
-  background-color: #0282f9;
+
+/* a.active {
+  border-bottom: #0282f9;
 } */
 
 </style>

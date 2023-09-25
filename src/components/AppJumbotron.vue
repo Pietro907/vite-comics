@@ -38,27 +38,20 @@ export default {
 
 
 <template>
-  <div class="container_main">
+  
 
-    <!-- Content goes here -->
-    <div class="container_content">
-      <div class="row r_container">
-        <div class="col-12">
-          <h2 class="ms"> Content goes here </h2>
-        </div>
-      </div>
-    </div>
+  
   
     <!-- jumbotron -->
     <div class="jumbotron">
       <div class="row jst_ctr w_jumbo">
   
-        <div v-for="link in navJumbo" class="col-3 mx-2 d-flex justify-content-center">
+        <div v-for="link in navJumbo" class="col-3">
           
           <img :src="link.image" class="image" alt="">
           
           <div class="card">
-            <h4>{{ link.text }}</h4>
+            <h4 class=" ms">{{ link.text }}</h4>
           </div>
           
         </div>
@@ -66,53 +59,39 @@ export default {
       </div>
     </div>
 
-  </div>
+
 
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+//@use '../assets/scss/particials/variables' as *;
 
 
 
-.container_main {
-  background-color: black;
-  max-width: 1920px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.container_content, .jumbotron > .row {
-  margin: 0 auto;
-}
-.container_content {
-  width: 70%;
-}
-
-.col-12 {
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.col-12 > h2 {
-  color: #ffffff;
-}
 .jumbotron {
   background-color: #0282f9;
-  
 }
 
 .w_jumbo {
   width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .col-3 {
-  
+  width: calc(100% / 12 * 3);
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding:2rem 1rem;
+  padding: 1rem 0;
+  color: #ffffff;
 }
 .image {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -120,11 +99,11 @@ export default {
 /* space */
 
 .ms {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .card {
   
-  width: 135px;
+  width: 150px;
 }
 
 /* color */

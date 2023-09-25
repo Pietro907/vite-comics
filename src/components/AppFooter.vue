@@ -210,20 +210,17 @@ export default {
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container_img {
   background-image: url(.././src/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   max-width: 1920px;
-
 }
 
 .container_img > .row {
   width: 70%;
-  height: 260px;
+  height: 350px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -268,7 +265,7 @@ footer {
 
 .container_foot {
   background-color: #303030;
-  padding: 2rem 0;
+  padding: 2.3rem 0;
 }
 
 .jst_ctr {
