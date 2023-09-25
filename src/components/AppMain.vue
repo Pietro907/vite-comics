@@ -1,20 +1,20 @@
 <script>
 
-import cards from '../card.js'
+import cardsArray from '../card.js'
+import AppMainContent from '../components/AppMainContent.vue'
 
 export default {
   // questo é il vs options object
   name: 'AppMain',
+  components: {
 
+    AppMainContent,
+  },
 
   data() {
     return {
-      cards,
-      props: {
-        img: String,
-        big: String,
-        small: String,
-      }
+      cardsArray,
+      
     }
   },
 }
@@ -30,12 +30,10 @@ export default {
 
 
 
-
-
-
     </div>
 
   </section>
+
   <div class="container_main">
 
     <!-- Content goes here -->
@@ -43,15 +41,11 @@ export default {
 
       <div class="row">
 
-        <div v-for="(card, i) in cards.cards" class="col-2">
-          <!-- <h2>{{card.price}}</h2> -->
-          <div class="card">
-            <img class="img_book" :src="img" :alt="small">
+        <AppMainContent :image="card.thumb" :title="card.series" :cardsArray="cardsArray" :cards="cardsArray.cards" v-for="(card, i) in cardsArray.cards"> </AppMainContent>
+        
+        
 
-            <h6>{{ card.series }}</h6>
-          </div>
-          <!-- <h2>{{card.type}}</h2> -->
-        </div>
+        
       </div>
 
     </div>
@@ -132,20 +126,7 @@ main {
   padding: 1rem 0 0;
 }
 
-.col-2 {
-  color: #ffffff;
-  padding: 0.5rem 0.5rem;
-  margin: 0 2px;
-}
 
-.card>.img_book {
-  width: 150px;
-  aspect-ratio: 1 / 1;
-}
-
-.card {
-  width: 150px;
-}
 
 .col-12>h2 {
   color: #ffffff;
