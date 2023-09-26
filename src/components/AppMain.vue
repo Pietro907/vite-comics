@@ -17,6 +17,11 @@ export default {
 
     }
   },
+  /* methods: {                       //Da provare, se a vite per fare un build corretta dell img
+    function getImageUrl(name) {
+      return new URL(`./dir/${name}.png`, import.meta.url).href
+    };
+  }, */
 }
 
 </script>
@@ -41,8 +46,8 @@ export default {
 
       <div class="row">
 
-        <AppMainContent :image="card.thumb" :title="card.series" :cardsArray="cardsArray" :cards="cardsArray.cards"
-          v-for="(card, i) in cardsArray.cards">
+        <AppMainContent :image="card.thumb" :title="card.series.toUpperCase()" :cardsArray="cardsArray"
+          :cards="cardsArray.cards" v-for="(card, i) in cardsArray.cards">
         </AppMainContent>
 
 

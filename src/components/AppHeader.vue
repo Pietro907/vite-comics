@@ -36,7 +36,7 @@ export default {
           <nav class="navbar navbar-expand-sm jst_btwn">
             <div v-for="linkHeader in navHeader" class="container_a pad_x">
       
-              <a class="active navbar-brand text-red text-uppercase"  href="#">{{ linkHeader }}</a>
+              <a class="active navbar-brand text-red text-uppercase"  href="#">{{ linkHeader.toUpperCase() }}</a>
               
             </div>
           </nav>

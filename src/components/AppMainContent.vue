@@ -33,9 +33,13 @@ export default {
   margin: 0 2px;
 }
 
-.card>.img_book {
+.card > .img_book {
   width: 150px;
-  aspect-ratio: 1 / 1;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+
+
 }
 
 .card {
