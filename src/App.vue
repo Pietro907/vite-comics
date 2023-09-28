@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss" scope>
 body {
-  margin: 0;
+  margin: 8px 0;
 }
   //@use './assets/scss/particials/variables.scss' as *
 
