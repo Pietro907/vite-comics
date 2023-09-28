@@ -3,7 +3,7 @@
 
 export default {
     name: 'AppMainContent',
-    props: ['image', 'title', 'cardsArray', 'cards', 'card']
+    props: ['image', 'title', 'cardsArray', 'cards', 'card'],
 }
 
 </script>

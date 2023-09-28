@@ -21,33 +21,25 @@ export default {
   <footer>
 
     <div class="container container_img">
-
+     
       <div class="row">
-
         <div v-for="(menu, i) in brands.navMenu" class="col-2">
 
           <ul class="list_unstyle">
 
-            <li class="title">{{ menu.title }}</li>
-            <li class="gray" v-for="name in menu.list"><a href="#"></a> {{ name.name }}</li>
+            <li class="title">{{ menu.title.toUpperCase() }}</li>
+            <li class="gray" v-for="name in menu.list"><a class="" href="#"></a> {{ name.name.toUpperCase() }}</li>
 
           </ul>
 
         </div>
-
+        
       </div>
 
-      <!-- Logo DC in background -->
-      <div class="row r_logo">
+    
+      <div class="img_dc_logo"></div>
 
-        <div class="col-4 logo_col">
-          <div class="card img_logo_bg">
 
-          </div>
-        </div>
-      </div>
-
-      
     </div>
     <!-- Sing up & Follow us -->
     <div class="container_foot">
@@ -96,21 +88,43 @@ footer {
 }
 
 .container_img {
-  background-image: url(.././src/assets/img/footer-bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../assets/img/footer-bg.jpg);
   background-size: cover;
   max-width: 1920px;
   display: flex;
+
+}
+.img_dc_logo{
+  background-image: url(../assets/img/dc-logo-bg.png);
+  background-size: cover;
+  width: 500px;
+  height: 380px;
+  background-repeat: no-repeat;
+  margin-right: 150px;
+  margin-top: -35px;
+  margin-bottom: 15px;
+  padding-right: 80px;
+
+  
 }
 
 .container_img>.row {
   height: 300px;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-content: start;
+  margin-left: 230px;
+
+}
+
+.col-2 {
+  display: flex;
   justify-content: start;
 }
+
 
 
 .title {
@@ -123,10 +137,15 @@ ul>li>a {
   color: gray;
 }
 
+.gray:hover {
+  color: white;
+}
+
 .list_unstyle {
   list-style: none;
   font-size: small;
-  text-align: start;
+  text-align: start;    
+  padding: 0 2rem 0 0;
 }
 
 
@@ -135,14 +154,6 @@ ul>li>a {
   height: 350px;
 }
 
-.img_logo_bg {
-  background-image: url(../assets/img/dc-logo-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin-top: -15px;
-}
 
 .r_logo>.col-4 {
   display: flex;
@@ -164,7 +175,8 @@ ul>li>a {
   margin-top: -1rem;
 
 }
-.container_foot > .row {
+
+.container_foot>.row {
   width: 70%;
   margin: 0 auto;
 }

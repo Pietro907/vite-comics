@@ -78,14 +78,15 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style scoped>
 .current_series {
   background-color: #0282f9;
   padding: 0.5rem;
   color: #ffffff;
   position: absolute;
   top: 390px;
-  left: 180px;
+  left: 240px;
+
 }
 
 .container_foot {
